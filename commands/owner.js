@@ -1,4 +1,4 @@
-const settings = require('../settings');
+const settings = require('../settings.js'); // Yahan .js lagana lazmi hai
 
 async function ownerCommand(sock, from, msg) {
     const ownerText = `👤 *BOT OWNER:* ${settings.ownerName}\n` +
