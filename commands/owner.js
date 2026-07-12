@@ -1,4 +1,6 @@
-const settings = require('../settings.js'); // Yahan .js lagana lazmi hai
+const path = require('path');
+// process.cwd() hamesha project ke main (root) folder ka path nikalta hai
+const settings = require(path.join(process.cwd(), 'settings.js')); 
 
 async function ownerCommand(sock, from, msg) {
     const ownerText = `👤 *BOT OWNER:* ${settings.ownerName}\n` +
